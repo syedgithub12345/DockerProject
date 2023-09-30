@@ -1,0 +1,10 @@
+version: '3'
+services:
+  quiz-app:
+    build:
+      context: .
+      dockerfile: First.dockerfile
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./quiz-app:/app
